@@ -4,6 +4,6 @@ import org.apache.commons.configuration2.Configuration;
 
 public interface ConfigLoader {
 
-    Configuration getConfiguration();
+    Configuration loadConfiguration(String fileName);
 
 }
