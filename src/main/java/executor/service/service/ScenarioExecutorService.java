@@ -25,7 +25,7 @@ public class ScenarioExecutorService implements ExecutorService {
         for (StepDTO step : steps) {
             String action = step.getAction();
             switch (action) {
-                case "clickCSS":
+                case "clickCss":
                     executionClickCss.step(webDriver, step);
                     break;
                 case "sleep":
