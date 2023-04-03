@@ -24,6 +24,4 @@ public class StepExecutionSleep implements StepExecution{
             throw new RuntimeException("Error occurred while executing sleep step", e);
         }
     }
-
-
 }
