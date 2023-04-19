@@ -10,12 +10,12 @@ import java.util.concurrent.TimeUnit;
 public class ParallelFlowExecutorServiceImpl implements ParallelFlowExecutorService {
 
     private final ScenarioSourceListener scenarioSourceListener;
-    private final ProxySourcesClientImpl proxySourcesClient;
+    private final ProxySourcesClient proxySourcesClient;
     private final ExecutionService executionService;
     private final ThreadPoolExecutor threadPoolExecutor;
 
     public ParallelFlowExecutorServiceImpl(ScenarioSourceListener scenarioSourceListener,
-                                           ProxySourcesClientImpl proxySourcesClient,
+                                           ProxySourcesClient proxySourcesClient,
                                            ExecutionService executionService,
                                            ThreadPoolConfigDTO threadPoolConfig,
                                            ThreadPoolExecutor threadPoolExecutor) {
