@@ -1,9 +1,10 @@
-package executor.service.service;
+package executor.service.service.impl;
 
 import executor.service.model.StepDTO;
+import executor.service.service.StepExecution;
 import org.openqa.selenium.WebDriver;
 
-public class StepExecutionSleep implements StepExecution{
+public class StepExecutionSleep implements StepExecution {
 
     private static final String ACTION = "sleep";
     @Override

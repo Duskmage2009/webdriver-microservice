@@ -2,6 +2,10 @@ package executor.service.service;
 
 import executor.service.model.ScenarioDTO;
 import executor.service.model.StepDTO;
+import executor.service.service.impl.ScenarioExecutorService;
+import executor.service.service.impl.StepExecutionClickCss;
+import executor.service.service.impl.StepExecutionClickXpath;
+import executor.service.service.impl.StepExecutionSleep;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

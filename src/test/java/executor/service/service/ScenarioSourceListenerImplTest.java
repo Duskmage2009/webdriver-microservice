@@ -8,6 +8,7 @@ import java.util.List;
 
 import executor.service.model.ScenarioDTO;
 import executor.service.model.StepDTO;
+import executor.service.service.impl.ScenarioSourceListenerImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -4,6 +4,8 @@ import executor.service.model.ProxyConfigHolderDTO;
 import executor.service.model.ProxyCredentialsDTO;
 import executor.service.model.ProxyNetworkConfigDTO;
 import executor.service.model.ScenarioDTO;
+import executor.service.service.impl.ExecutionServiceFacade;
+import executor.service.service.impl.ScenarioExecutorService;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;

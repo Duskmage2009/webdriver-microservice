@@ -3,7 +3,7 @@ package executor.service.service;
 import executor.service.model.ProxyConfigHolderDTO;
 import executor.service.model.ProxyCredentialsDTO;
 import executor.service.model.ProxyNetworkConfigDTO;
-import org.junit.jupiter.api.AfterEach;
+import executor.service.service.impl.ProxySourcesClientImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

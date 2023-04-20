@@ -1,9 +1,10 @@
-package executor.service.service;
+package executor.service.service.impl;
 
 import executor.service.model.ProxyConfigHolderDTO;
 import executor.service.model.ProxyCredentialsDTO;
 import executor.service.model.ProxyNetworkConfigDTO;
 import executor.service.config.PropertiesLoader;
+import executor.service.service.WebDriverInitializer;
 import org.apache.commons.configuration2.Configuration;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.WebDriver;

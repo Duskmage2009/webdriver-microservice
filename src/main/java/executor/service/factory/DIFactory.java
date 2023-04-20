@@ -3,6 +3,7 @@ package executor.service.factory;
 import executor.service.config.PropertiesLoader;
 import executor.service.model.ThreadPoolConfigDTO;
 import executor.service.service.*;
+import executor.service.service.impl.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,6 +12,18 @@ import java.util.concurrent.ThreadPoolExecutor;
 
 
 public class DIFactory implements AbstractFactory{
+
+    private static DIFactory INSTANCE;
+
+    private DIFactory() {
+    }
+
+    public static DIFactory getInstance(){
+        if (INSTANCE == null) {
+            INSTANCE = new DIFactory();
+        }
+        return INSTANCE;
+    }
     java.util.concurrent.ExecutorService fixedPool = Executors.newFixedThreadPool(1);
     private ThreadPoolConfigDTO threadPoolConfigDTO = new ThreadPoolConfigDTO(PropertiesLoader.APPLICATION_PROPERTIES.getInt( "thread-pool.config.core-pool-size"),
             PropertiesLoader.APPLICATION_PROPERTIES.getLong("thread-pool.config.keep-alive-time"));

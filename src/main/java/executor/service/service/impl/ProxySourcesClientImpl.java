@@ -1,10 +1,11 @@
-package executor.service.service;
+package executor.service.service.impl;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.type.TypeReference;
 import executor.service.model.ProxyConfigHolderDTO;
 import executor.service.model.ProxyCredentialsDTO;
 import executor.service.model.ProxyNetworkConfigDTO;
+import executor.service.service.ProxySourcesClient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
